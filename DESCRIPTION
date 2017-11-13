@@ -1,0 +1,24 @@
+Package: greynoise
+Type: Package
+Title: Query 'GreyNoise Intelligence 'API'
+Version: 0.1.0
+Date: 2017-11-13
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Author: Bob Rudis (bob@rud.is)
+Maintainer: Bob Rudis <bob@rud.is>
+Description: Tools are provided to query the 'GreyNoise Intelligence 'API'.
+URL: https://github.com/hrbrmstr/greynoise
+BugReports: https://github.com/hrbrmstr/greynoise/issues
+License: AGPL
+Suggests:
+    testthat,
+    covr
+Depends:
+    R (>= 3.2.0)
+Imports:
+    httr,
+    jsonlite
+RoxygenNote: 6.0.1

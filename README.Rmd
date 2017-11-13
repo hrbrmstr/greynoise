@@ -1,0 +1,66 @@
+---
+output: rmarkdown::github_document
+---
+```{r include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE, error=FALSE)
+options(width=120)
+```
+# greynoise
+
+Query 'GreyNoise Intelligence 'API'
+
+## Description
+
+Tools are provided to query the 'GreyNoise Intelligence 'API'.
+
+GreyNoise has a web site but there's nothing there at the moment: <http://greynoise.io/>
+
+## What's Inside The Tin
+
+- `gn_list_tags`:	List GreyNoise Intelligence Tags
+- `gn_query_by_ip`:	Query all tags associated with a given IP address
+- `gn_query_by_tag`:	Query all IPs that have a given tag
+
+The following functions are implemented:
+
+## Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/greynoise")
+```
+
+## Usage
+
+```{r}
+library(greynoise)
+library(tidyverse)
+
+# current verison
+packageVersion("greynoise")
+```
+
+### List tags
+
+```{r}
+gn_list_tags()
+```
+
+### Query by a specific tag
+
+Let's look for who scans for DNS endpoints
+
+```{r}
+(dns <- gn_query_by_tag("DNS_SCANNER_HIGH"))
+
+glimpse(dns)
+```
+
+### Query by IP
+
+We'll use fie first 5 IP addresses found in the previous query results.
+
+```{r}
+(what_else <- map_df(dns$ip[1:5], gn_query_by_ip))
+
+glimpse(what_else)
+```
