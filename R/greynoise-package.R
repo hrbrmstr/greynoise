@@ -5,6 +5,7 @@
 #' @name greynoise
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)
-#' @import  httr
+#' @import httr
+#' @importFrom memoise memoise forget
 #' @importFrom jsonlite fromJSON
 NULL
