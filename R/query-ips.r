@@ -20,9 +20,9 @@ gn_query_by_ip <- function(ip) {
 
   res <- jsonlite::fromJSON(res, flatten=TRUE)
 
-  if (res$status != "exists") {
+  if (res$status != "ok") {
     message(res$status)
-    return(NULL)
+    return(invisible(NULL))
   }
 
   res$records$ip <- res$ip
