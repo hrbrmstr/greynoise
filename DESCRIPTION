@@ -1,8 +1,8 @@
 Package: greynoise
 Type: Package
 Title: Query 'GreyNoise Intelligence 'API'
-Version: 0.1.0
-Date: 2017-11-13
+Version: 0.2.0
+Date: 2018-07-11
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0001-5670-2640"))
@@ -13,6 +13,7 @@ Description: Tools are provided to query the 'GreyNoise Intelligence 'API'.
 URL: https://github.com/hrbrmstr/greynoise
 BugReports: https://github.com/hrbrmstr/greynoise/issues
 License: AGPL
+Encoding: UTF-8
 Suggests:
     testthat,
     covr
@@ -20,5 +21,9 @@ Depends:
     R (>= 3.2.0)
 Imports:
     httr,
-    jsonlite
-RoxygenNote: 6.0.1
+    jsonlite,
+    grid,
+    gtable,
+    ggplot2,
+    hrbrthemes
+RoxygenNote: 6.0.1.9000

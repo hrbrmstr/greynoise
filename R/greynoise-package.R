@@ -5,6 +5,6 @@
 #' @name greynoise
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)
-#' @import  httr
+#' @import httr ggplot2 hrbrthemes grid gtable
 #' @importFrom jsonlite fromJSON
 NULL
