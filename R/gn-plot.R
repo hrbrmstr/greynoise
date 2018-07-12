@@ -44,7 +44,7 @@ gn_port_summary <- function(port, protocol = c("tcp", "udp"),
       width = 7.5, height = 4.5, bg = "#131111"
     )
 
-    message(sprintC("Plot saved to [%s]", path.expand(save)))
+    message(sprintf("Plot saved to [%s]", path.expand(save)))
 
   }
 
