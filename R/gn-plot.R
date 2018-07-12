@@ -16,7 +16,7 @@ gn_port_summary <- function(port, protocol = c("tcp", "udp"),
   logo <- png::readPNG(system.file("img", "gn-small.png", package="greynoise"))
   ann <- rasterGrob(logo, width=unit(10, "lines"))
 
-  ggplot(gn5555, aes(date, ips)) +
+  ggplot(psum, aes(date, ips)) +
     geom_area(color = "white", fill = "#ffffff55") +
     scale_x_date(expand=c(0,0)) +
     scale_y_continuous(expand = c(0,0), labels=scales::comma) +
