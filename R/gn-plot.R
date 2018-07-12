@@ -3,6 +3,7 @@
 #' @md
 #' @param port,protocol,gn_key same as [research_time_series()]
 #' @param save if not `NULL`, the full path to save the file (with `.png` extension)
+#' @return data and plot (invisibly)
 #' @export
 gn_port_summary <- function(port, protocol = c("tcp", "udp"),
                             save = NULL,
@@ -21,7 +22,7 @@ gn_port_summary <- function(port, protocol = c("tcp", "udp"),
     scale_y_continuous(expand = c(0,0), labels=scales::comma) +
     labs(
       x = NULL, y ="# Unique IPvs",
-      title = sprintc("Port %s Summary History", port),
+      title = sprintf("Port %s Summary History", port),
       caption = "Source: GreyNoise Intelligence"
     ) +
     theme_gn() -> gg
@@ -46,5 +47,12 @@ gn_port_summary <- function(port, protocol = c("tcp", "udp"),
     message(sprintC("Plot saved to [%s]", path.expand(save)))
 
   }
+
+  list(
+    data = psum,
+    plot = gt
+  ) -> out
+
+  invisible(out)
 
 }
