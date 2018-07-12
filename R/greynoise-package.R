@@ -5,8 +5,7 @@
 #' @name greynoise
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)
-#' @import httr ggplot2 hrbrthemes grid gtable
-#' @import httr
+#' @import httr ggplot2 hrbrthemes grid gtable extrafont
 #' @importFrom memoise memoise forget
 #' @importFrom jsonlite fromJSON
 NULL

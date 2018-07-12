@@ -25,5 +25,6 @@ Imports:
     grid,
     gtable,
     ggplot2,
-    hrbrthemes
+    hrbrthemes,
+    extrafont
 RoxygenNote: 6.0.1.9000

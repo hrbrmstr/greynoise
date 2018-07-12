@@ -12,6 +12,9 @@ gn_port_summary(port, protocol = c("tcp", "udp"), save = NULL,
 
 \item{save}{if not \code{NULL}, the full path to save the file (with \code{.png} extension)}
 }
+\value{
+data and plot (invisibly)
+}
 \description{
 Generate a simple port summary plot
 }
