@@ -2,11 +2,7 @@ Package: greynoise
 Type: Package
 Title: Query 'GreyNoise Intelligence 'API'
 Version: 0.2.0
-<<<<<<< HEAD
-Date: 2018-07-11
-=======
-Date: 2017-11-22
->>>>>>> 0a1ea59241ad80883f952981665927c0205ee64e
+Date: 2018-07-12
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0001-5670-2640"))
@@ -16,12 +12,8 @@ Maintainer: Bob Rudis <bob@rud.is>
 Description: Tools are provided to query the 'GreyNoise Intelligence 'API'.
 URL: https://github.com/hrbrmstr/greynoise
 BugReports: https://github.com/hrbrmstr/greynoise/issues
-<<<<<<< HEAD
 License: AGPL
 Encoding: UTF-8
-=======
-License: MIT + file LICENSE
->>>>>>> 0a1ea59241ad80883f952981665927c0205ee64e
 Suggests:
     testthat,
     covr
@@ -30,13 +22,8 @@ Depends:
 Imports:
     httr,
     jsonlite,
-<<<<<<< HEAD
     grid,
     gtable,
     ggplot2,
     hrbrthemes
 RoxygenNote: 6.0.1.9000
-=======
-    memoise
-RoxygenNote: 6.0.1
->>>>>>> 0a1ea59241ad80883f952981665927c0205ee64e

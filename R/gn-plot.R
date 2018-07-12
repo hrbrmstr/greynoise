@@ -9,7 +9,7 @@ gn_port_summary <- function(port, protocol = c("tcp", "udp"),
                             gn_key = Sys.getenv("GREYNOISE_API_KEY")) {
 
   research_time_series(
-    port = port, protocol = protocol, summary = TRUE, gn_key = gn_key
+    port = port, protocol = protocol, summarise = TRUE, gn_key = gn_key
   ) -> psum
 
   logo <- png::readPNG(system.file("img", "gn-small.png", package="greynoise"))
