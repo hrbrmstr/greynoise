@@ -12,7 +12,6 @@
   }
 
   if (sum(grepl("Lato", fnt$FontName)) == 0) {
-    suppressWarnings(suppressMessages(extrafont::font_import(font_dir, prompt=FALSE)))
     warning(
       sprintf(
         "You **need** to install the Lato fonts. They can be found in [%s].\n\n",
