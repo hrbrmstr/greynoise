@@ -1,7 +1,5 @@
 .onAttach <- function(libname, pkgname) {
 
-  font_dir <- system.file("fonts", package="greynoise")
-
   fnt <- extrafont::fonttable()
 
   if (sum(grepl("IBMPlexSans", fnt$FontName)) == 0) {
