@@ -8,4 +8,9 @@ import_gn_fonts <- function() {
 
   extrafont::font_import(font_dir, prompt=FALSE)
   extrafont::font_import(font_dir, prompt=FALSE)
+
+  message(
+    "The font files can be found in ", fontdir
+  )
+
 }
