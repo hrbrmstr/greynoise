@@ -4,19 +4,13 @@
 
   if (sum(grepl("IBMPlexSans", fnt$FontName)) == 0) {
     warning(
-      sprintf(
-        "You **need** to install the IBM Plex Sans fonts. They can be found in [%s].\n\n",
-        font_dir
-      ), "Run 'import_gn_fonts()' after that"
+      "You **need** to install the IBM Plex Sans fonts. Run 'import_gn_fonts()'"
     )
   }
 
   if (sum(grepl("Lato", fnt$FontName)) == 0) {
     warning(
-      sprintf(
-        "You **need** to install the Lato fonts. They can be found in [%s].\n\n",
-        font_dir
-      ), "Run 'import_gn_fonts()' after that"
+      "You **need** to install the Lato fonts. Run 'import_gn_fonts()'"
     )
   }
 
