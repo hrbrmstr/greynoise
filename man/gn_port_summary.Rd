@@ -4,8 +4,12 @@
 \alias{gn_port_summary}
 \title{Generate a simple port summary plot}
 \usage{
-gn_port_summary(port, protocol = c("tcp", "udp"), save = NULL,
-  gn_key = Sys.getenv("GREYNOISE_API_KEY"))
+gn_port_summary(
+  port,
+  protocol = c("tcp", "udp"),
+  save = NULL,
+  gn_key = Sys.getenv("GREYNOISE_API_KEY")
+)
 }
 \arguments{
 \item{port, protocol, gn_key}{same as \code{\link[=research_time_series]{research_time_series()}}}

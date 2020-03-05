@@ -3,7 +3,6 @@
 \docType{package}
 \name{greynoise}
 \alias{greynoise}
-\alias{greynoise-package}
 \title{Query 'GreyNoise Intelligence 'API'}
 \description{
 Tools are provided to query the 'GreyNoise Intelligence 'API'.

@@ -26,5 +26,6 @@ Imports:
     gtable,
     ggplot2,
     hrbrthemes,
-    extrafont
-RoxygenNote: 6.0.1.9000
+    extrafont,
+    magrittr
+RoxygenNote: 7.0.2

@@ -4,18 +4,35 @@
 \alias{theme_gn}
 \title{GreyNoise ggplot2 theme}
 \usage{
-theme_gn(base_family = "Lato", base_size = 11.5,
-  plot_title_family = base_family, plot_title_size = 18,
-  plot_title_face = "bold", plot_title_margin = 10,
-  subtitle_family = "Lato", subtitle_size = 13, subtitle_face = "plain",
-  subtitle_margin = 15, strip_text_family = base_family,
-  strip_text_size = 12, strip_text_face = "plain",
-  caption_family = "Lato", caption_size = 9, caption_face = "plain",
-  caption_margin = 10, axis_text_family = "IBMPlexSans",
-  axis_text_size = base_size, axis_title_family = base_family,
-  axis_title_size = 9, axis_title_face = "plain", axis_title_just = "rt",
-  plot_margin = margin(30, 30, 30, 30), grid = TRUE, axis = FALSE,
-  ticks = FALSE)
+theme_gn(
+  base_family = "Lato",
+  base_size = 11.5,
+  plot_title_family = base_family,
+  plot_title_size = 18,
+  plot_title_face = "bold",
+  plot_title_margin = 10,
+  subtitle_family = "Lato",
+  subtitle_size = 13,
+  subtitle_face = "plain",
+  subtitle_margin = 15,
+  strip_text_family = base_family,
+  strip_text_size = 12,
+  strip_text_face = "plain",
+  caption_family = "Lato",
+  caption_size = 9,
+  caption_face = "plain",
+  caption_margin = 10,
+  axis_text_family = "IBMPlexSans",
+  axis_text_size = base_size,
+  axis_title_family = base_family,
+  axis_title_size = 9,
+  axis_title_face = "plain",
+  axis_title_just = "rt",
+  plot_margin = margin(30, 30, 30, 30),
+  grid = TRUE,
+  axis = FALSE,
+  ticks = FALSE
+)
 }
 \arguments{
 \item{base_family}{base font family and size}
@@ -60,7 +77,7 @@ theme_gn(base_family = "Lato", base_size = 11.5,
 
 \item{axis_title_face}{axis title font family, face and size}
 
-\item{axis_title_just}{axis title font justificationk one of \code{[blmcrt]}}
+\item{axis_title_just}{axis title font justificationk one of \verb{[blmcrt]}}
 
 \item{plot_margin}{plot margin (specify with \link[ggplot2:margin]{ggplot2::margin})}
 

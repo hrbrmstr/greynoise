@@ -7,7 +7,7 @@
 install_cmdline_helpers(prefix = "/usr/local/bin")
 }
 \arguments{
-\item{prefix}{prefix to \code{bin} directory. Defaults to \code{/usr/local/bin}}
+\item{prefix}{prefix to \code{bin} directory. Defaults to \verb{/usr/local/bin}}
 }
 \description{
 Install command-line helpers

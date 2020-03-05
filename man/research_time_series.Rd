@@ -4,8 +4,12 @@
 \alias{research_time_series}
 \title{Retrieve (optionally summarised) scan history for a given port/protocol}
 \usage{
-research_time_series(port, protocol = c("tcp", "udp"), summarise = TRUE,
-  gn_key = Sys.getenv("GREYNOISE_API_KEY"))
+research_time_series(
+  port,
+  protocol = c("tcp", "udp"),
+  summarise = TRUE,
+  gn_key = Sys.getenv("GREYNOISE_API_KEY")
+)
 }
 \arguments{
 \item{port}{port to query for}
